@@ -1,7 +1,7 @@
-FROM nginx:stable
+FROM nginxinc/nginx-unprivileged:stable
 
 COPY statics/index.html /usr/share/nginx/html
 
 CMD ["nginx", "-g", "daemon off;"]
 
-EXPOSE 80
+EXPOSE 8080
