@@ -1,4 +1,4 @@
-FROM nginxinc/nginx-unprivileged:stable
+FROM harbor.innogrid.com/nginxinc/nginx-unprivileged:stable
 
 COPY statics/index.html /usr/share/nginx/html
 
